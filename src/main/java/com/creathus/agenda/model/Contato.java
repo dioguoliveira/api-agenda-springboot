@@ -1,4 +1,4 @@
-package com.creathus.agenda.entities;
+package com.creathus.agenda.model;
 
 import java.io.Serializable;
 
