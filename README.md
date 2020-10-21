@@ -25,6 +25,15 @@ Caso queira modificar os dados do MySQL acessar o path `/api-agenda-springboot/s
     PUT: http://localhost:8080/api/v1/contatos/{id}
     DELETE: http://localhost:8080/api/v1/contatos/{id}
 ```
+Corpo JSON para requisição
+```
+    {
+        "nome": "Nome",
+        "sexo": "M",
+        "telefone": "9299999999",
+        "email": "email@gmail.com"
+    }
+```
 
 ## Swagger
 Para visualizar a documentação da API acessar o <a href="http://localhost:8080/swagger-ui.html#/" target="_blank" >Swagger UI</a> que possui a documentação de todas as requisições.
