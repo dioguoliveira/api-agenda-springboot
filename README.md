@@ -8,6 +8,19 @@ A API de Agenda é um pequeno desafio que recebi para o processo de seleção de
 
 Para executar o projeto basta apenas você ter o [Docker](https://docs.docker.com/get-docker/) e o [Docker Compose](https://docs.docker.com/compose/install/)  instalados localmente em sua máquina.
 
+### Subir projeto sem MySQL
+
+> **ATENÇÃO:** Esse projeto sobe um container MySQL no Docker. Caso você já tenha um servidor MySQL instalado ou um container rodando previamente, suba apenas o serviço API Agenda.
+
+Primeiramente, você deve alterar o arquivo **docker-compose.yml**. Na seção de **api_agenda** ajuste o valor das variáveis de ambiente para aqueles referente ao seu ambiente.
+
+Em seguida, execute o seguinte comando:
+
+``` $ docker-compose up -d api_agenda ```
+
+
+### Subir projeto com MySQL
+
 Dentro da pasta do projeto, abra o terminal e execute o seguinte comando:
 
 ``` $ docker-compose up -d ```
