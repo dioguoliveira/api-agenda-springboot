@@ -8,9 +8,9 @@ A API de Agenda é um pequeno desafio que recebi para o processo de seleção de
 
 Para executar o projeto basta apenas você ter o [Docker](https://docs.docker.com/get-docker/) e o [Docker Compose](https://docs.docker.com/compose/install/)  instalados localmente em sua máquina.
 
-### Subir projeto sem MySQL
-
 > **ATENÇÃO:** Esse projeto sobe um container MySQL no Docker. Caso você já tenha um servidor MySQL instalado ou um container rodando previamente, suba apenas o serviço API Agenda.
+
+### Subir projeto sem MySQL
 
 Primeiramente, você deve alterar o arquivo **docker-compose.yml**. Na seção de **api_agenda** ajuste o valor das variáveis de ambiente para aqueles referente ao seu ambiente.
 
@@ -84,3 +84,4 @@ Corpo JSON para requisição
 
 ## Swagger
 Para visualizar a documentação da API acessar o <a href="http://localhost:8080/swagger-ui.html#/" target="_blank" >Swagger UI</a> que possui a documentação de todas as requisições.
+
