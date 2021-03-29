@@ -18,12 +18,8 @@ public class ContatoService {
 		return contatoRepository.findAll();
 	}
 
-	public Contato pesquisarContato(Long id) {
-		Optional<Contato> optional = contatoRepository.findById(id);
-		if (optional.isPresent()) {
-			return optional.get();
-		}
-		return null;
+	public Optional<Contato> pesquisarContato(Long id) {
+		return contatoRepository.findById(id);
 	}
 
 	public Contato criarContato(Contato contato) {
