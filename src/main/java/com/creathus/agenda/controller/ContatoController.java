@@ -42,8 +42,10 @@ public class ContatoController {
 	
 	@GetMapping("/{id}")
 	@ApiOperation(value = "Retorna um contato único utilizando o código identificado como parâmetro.")
-	public Contato pesquisarContato(@PathVariable(value = "id") Long id) {
-		return contatoService.pesquisarContato(id);
+	public ResponseEntity<Contato> pesquisarContato(@PathVariable(value = "id") Long id) {
+		 return contatoService.pesquisarContato(id)
+				 .map(ResponseEntity::ok)
+				 .orElse(ResponseEntity.notFound().build());
 	}
 	
 	@PostMapping
